@@ -19,4 +19,5 @@ Notably, this boilerplate does **not** use or support:
 - Testing (yet)
 - Blueprint (yet)
 - Building distributable assets (yet)
+- CircleCI integration (yet)
 - Babel
