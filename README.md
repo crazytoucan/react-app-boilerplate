@@ -11,13 +11,13 @@ $ yarn start
 
 - TypeScript
 - LESS
+- Blueprint
 - React hot loading
 - LESS hot loading
 
 Notably, this boilerplate does **not** use or support:
 
 - Testing (yet)
-- Blueprint (yet)
 - Building distributable assets (yet)
 - CircleCI integration (yet)
 - Babel
