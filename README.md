@@ -14,10 +14,19 @@ $ yarn start
 - Blueprint
 - React hot loading
 - LESS hot loading
+- Building distributable assets
 
 Notably, this boilerplate does **not** use or support:
 
 - Testing (yet)
-- Building distributable assets (yet)
 - CircleCI integration (yet)
 - Babel
+
+## Building
+
+Once you're ready to deploy your application, build a dist with `yarn build:dist`.
+This will build all your assets into the `build/www` directory.
+
+```
+$ yarn build:dist
+```

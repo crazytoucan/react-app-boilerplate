@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
  * This code is obviously fickle. https://github.com/gaearon/react-hot-loader#known-limitations
  * walks through some gotchas for component registration.
  */
+declare const module: any;
 if (module.hot) {
   module.hot.accept("./components/App", () => {
     const NextApp = require("./components/App").App;

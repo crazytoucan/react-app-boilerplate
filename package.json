@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
+    "build:dist": "webpack --config webpack.config.dist.js",
     "lint": "tslint 'src/**/@(*.ts|*.tsx)' -t stylish",
     "lint:ci": "tslint 'src/**/@(*.ts|*.tsx)'",
     "lint:fix": "tslint 'src/**/@(*.ts|*.tsx)' -t stylish --fix",
@@ -15,6 +16,7 @@
     "@types/jest": "^21.1.9",
     "@types/react": "^16.0.31",
     "@types/react-dom": "^16.0.3",
+    "@types/react-hot-loader": "^3.0.5",
     "@types/react-test-renderer": "^15.5.0",
     "add-asset-html-webpack-plugin": "^2.0.1",
     "css-loader": "^0.26.4",
