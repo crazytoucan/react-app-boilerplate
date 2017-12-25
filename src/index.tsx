@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 import { AppContainer } from "react-hot-loader";
 import { App } from "./components/App";
 
-function renderApp() {
+document.addEventListener("DOMContentLoaded", () => {
   const app = (
     <App
       name="crazytoucan"
@@ -11,10 +11,6 @@ function renderApp() {
   );
 
   ReactDOM.render(app, document.getElementById("app"));
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  renderApp();
 });
 
 /*
