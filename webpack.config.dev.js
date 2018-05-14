@@ -11,8 +11,8 @@ var indexHtml = path.join(SRC_DIR, "index.html");
 
 module.exports = {
   devtool: "cheap-module-eval-source-map",
+  mode: "development",
   entry: [
-    "react-hot-loader/patch",
     indexSource,
     indexStyle,
   ],
@@ -21,11 +21,10 @@ module.exports = {
     filename: "[name].js"
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.tsx?$/,
         use: [
-          "react-hot-loader/webpack",
           {
             loader: "ts-loader",
             options: {
@@ -56,7 +55,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       filename: "index.html",
@@ -68,6 +66,9 @@ module.exports = {
     alias: {
       "react/lib/ReactMount": "react-dom/lib/ReactMount"
     }
+  },
+  optimization: {
+    namedModules: true,
   },
   devServer: {
     hot: true,
