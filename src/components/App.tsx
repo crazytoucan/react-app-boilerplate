@@ -1,11 +1,12 @@
 import * as React from "react";
+import { hot } from "react-hot-loader";
 import { ExampleComponent } from "./ExampleComponent";
 
 export interface AppProps {
   name: string;
 }
 
-export class App extends React.PureComponent<AppProps, {}> {
+class AppInternal extends React.PureComponent<AppProps, {}> {
   render() {
     return (
       <ExampleComponent
@@ -14,3 +15,5 @@ export class App extends React.PureComponent<AppProps, {}> {
     );
   }
 }
+
+export const App: React.ComponentClass<AppProps> = hot(module)(AppInternal);

@@ -13,6 +13,7 @@ module.exports = {
   devtool: "cheap-module-eval-source-map",
   mode: "development",
   entry: [
+    "react-hot-loader/patch",
     indexSource,
     indexStyle,
   ],
