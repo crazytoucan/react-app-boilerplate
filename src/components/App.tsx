@@ -8,11 +8,7 @@ export interface AppProps {
 
 class AppInternal extends React.PureComponent<AppProps, {}> {
   render() {
-    return (
-      <ExampleComponent
-        name={this.props.name}
-      />
-    );
+    return <ExampleComponent name={this.props.name} />;
   }
 }
 
